@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bulmaca" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KIRMIZI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKR-NX-Jej">
+                                <rect key="frame" x="20" y="119" width="353" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="DiB-sK-VTP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" red="0.094117647058823528" green="0.11372549019607843" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="xWZ-Cu-Upt">
+                                <rect key="frame" x="20" y="339" width="353" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hrN-TW-bhh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="35"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmm-cQ-RuD">
+                                <rect key="frame" x="129" y="439" width="135" height="44"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="BULDUM" cornerStyle="fixed">
+                                    <backgroundConfiguration key="background" cornerRadius="25" strokeWidth="3" strokeOutset="4">
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="enterButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lDC-Tw-7nR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCa-qd-m73">
+                                <rect key="frame" x="298" y="59" width="79" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="veM-Da-atk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.2627450980392157" green="0.60392156862745094" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WCa-qd-m73" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="298" id="0Vb-Dz-7aK"/>
+                            <constraint firstItem="WCa-qd-m73" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4eY-Be-RHb"/>
+                            <constraint firstItem="xWZ-Cu-Upt" firstAttribute="leading" secondItem="VKR-NX-Jej" secondAttribute="leading" id="6ii-hQ-6k4"/>
+                            <constraint firstItem="Wmm-cQ-RuD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8QW-n9-6UJ"/>
+                            <constraint firstItem="xWZ-Cu-Upt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="339" id="BGe-Gv-LfU"/>
+                            <constraint firstItem="Wmm-cQ-RuD" firstAttribute="top" secondItem="xWZ-Cu-Upt" secondAttribute="bottom" constant="50" id="N6i-jJ-8gx"/>
+                            <constraint firstItem="VKR-NX-Jej" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NDY-P2-DiL"/>
+                            <constraint firstItem="VKR-NX-Jej" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="PDH-S5-pdC"/>
+                            <constraint firstItem="xWZ-Cu-Upt" firstAttribute="trailing" secondItem="VKR-NX-Jej" secondAttribute="trailing" id="hcP-Kb-5jC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VKR-NX-Jej" secondAttribute="trailing" constant="20" id="p6t-1G-dwR"/>
+                            <constraint firstItem="WCa-qd-m73" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vR3-4C-ccm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clueLabel" destination="VKR-NX-Jej" id="AAL-Bk-uSU"/>
+                        <outlet property="guessTextField" destination="xWZ-Cu-Upt" id="sDX-8T-uKj"/>
+                        <outlet property="scoreLabel" destination="WCa-qd-m73" id="DH2-3i-qhr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+</document>
